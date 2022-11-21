@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temp=new Array(6);
+        temp[0]=23.3;
+        temp[1]=25.3;
+        temp[2]=13.3;
+        temp[3]=20.5;
+        temp[4]=23.3;
+        temp[5]=27.5;
+
+        /*
+        let i=0, sum=0;
+        while(i<temp.length){
+            sum+=temp[i];
+            i++;
+        }
+        let avg=sum/temp.length;
+
+        document.write("평균 온도 : "+avg+"도 입니다.");
+        */
+
+        temp.sort();
+        for(let i of temp)
+            document.write(i);
+
+        document.write("<br>");
+        temp.sort((a,b)=> b-a);
+        for(let i of temp)
+            document.write(i+" ");
+
+    </script>
+</body>
+</html>

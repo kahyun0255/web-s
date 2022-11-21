@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tri=prompt("밑변 높이 입력 : ").split(' ');
+
+        
+        //즉시실행 함수
+        (function (a, b){
+            let ans=(Number(a)*Number(b))/2;
+            document.write(ans);
+        })(tri[0],tri[1]);
+
+
+        //기본 함수
+        area(tri[0],tri[1]);
+
+        function area(a,b){
+            let ans=(Number(a)*Number(b))/2;
+            console.log(ans);
+        }
+        
+    </script>
+</body>
+</html>

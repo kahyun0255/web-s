@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x= prompt("입력","기호, 반복 횟수").split(",");
+        pr(x[0],Number(x[1]));
+        
+        function pr(m,n){
+            for(let i=0;i<n;i++){
+                document.write(m);
+            }
+        }
+
+        document.write("<br>");
+
+        (function(m,n){
+            for(let i=0;i<n;i++){
+                document.write(m);
+            }
+        })(x[0],x[1]);
+
+
+    </script>
+</body>
+</html>

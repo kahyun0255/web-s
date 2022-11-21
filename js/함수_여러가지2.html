@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //기본 함수
+        function c(m,n){
+            for(let i=0;i<n;i++) document.write(m);
+        }
+        c("@",4);
+
+        //즉시실행
+        (function(m,n){
+            while(n--) document.write(m);
+        })("%",5);
+
+        //변수식 함수
+        let a=function(m,n){
+            for(let i=0;i<n;i++) document.write(m);
+        }
+        a("$",3);
+
+        //화살표 함수
+        let b=(m,n)=>{
+            while(n--) document.write(m);
+        };
+        b("^",7);
+
+
+    </script>
+</body>
+</html>
