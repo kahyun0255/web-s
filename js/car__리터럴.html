@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let liter=prompt("주유량");
+
+        let Car={
+            name:"붕붕이",
+            color:"white",
+            y:23.456,
+
+            out:function(){
+                document.write(this.name+"<br>");
+            },
+
+            dist:function(liter){
+                document.write("갈 수 있는 거리 : "+this.y*liter);
+            }
+        };
+        
+        Car.dist(liter);
+    </script>
+</body>
+</html>

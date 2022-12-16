@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+
+    <ol type="A">
+        <li>물 끓이기</li>
+        <li>라면 스프 넣기</li>
+        <li>파 넣기</li>
+        <li>5분 후 <strong>맛있게</strong>먹기</li>
+    </ol>
+
+    <script>
+        let li=document.getElementsByTagName("li");
+
+        for(let i=0;i<li.length;i++)
+            li[i].style.color="green";
+
+        let ol=document.querySelector("ol");
+        ol.onmouseover=backcolor;
+        ol.onmouseout=function(){
+            this.style.backgroundColor="white";
+        }
+
+        let h3=document.getElementsByTagName("h3");
+        h3[0].onclick=backcolor;
+        
+        function backcolor(){
+            ol.style.backgroundColor="yellow";
+        }
+
+
+    </script>
+
+</body>
+</html>

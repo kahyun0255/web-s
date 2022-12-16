@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let l=prompt("주유량");
+        function Car(name,color,y){
+            this.neme=name;
+            this.color=color;
+            this.y=y;
+
+            this.out=function(){
+                document.write(this.name+", "+this.color+", "+this.y);
+            }
+        }
+        let Car1=new Car("붕붕이","white",23.145);
+        document.write("갈 수 있는 거리 : "+l*Car1.y);
+
+    </script>
+</body>
+</html>

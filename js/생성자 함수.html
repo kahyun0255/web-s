@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Book(title, price){
+            this.title=title;
+            this.price=price;
+            this.out=function(){
+                document.write(this.title+"<br>");
+            }
+        }
+        let bk1=new Book("html",2000);
+        bk1.out();
+
+        let bk2=new Book("html",2000);
+        bk2.out();
+    </script>
+</body>
+</html>
